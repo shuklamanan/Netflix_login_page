@@ -1,13 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix India – Watch TV Shows Online, Watch Movies Online</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
     <link rel="stylesheet" href="netflix.css">
+    <script src="/netflix.js"></script>
 </head>
+
 <body>
-    <img src="https://assets.nflxext.com/ffe/siteui/vlv3/b85863b0-0609-4dba-8fe8-d0370b25b9ee/fdf508c8-97d0-42fd-a6f9-9bef6bf96934/IN-en-20230731-popsignuptwoweeks-perspective_alpha_website_large.jpg">
-    <div class="center-text"><strong>Unlimited movies, TV shows and more</strong></div>
+    <div class="netflix-image">
+        <div class="heading">
+            <div class="logo-netflix">
+            </div>
+            <div class="drop" style="height: 0px; font-size:20px ;">
+                <button class="lan-button">
+                    <img src="/images/images-removebg-preview.png"
+                        style="width: 20px;height: 20px; display: inline-block; margin-bottom: 4px; margin-left: 4px;">
+                    <select name="languages" class="language">
+                        <option value="0" selected>English</option>
+                        <option value="1">हिन्दी</option>
+                    </select>
+                </button>
+            </div>
+            <button type="button" value="Sign In" class="sign-in">Sign In</button>
+        </div>
+        <div class="center-text">Unlimited movies, TV shows and more</div>
+        <p class="second-text">Watch anywhere. Cancel anytime.</p>
+        <p class="third-text">Ready to watch? Enter your email to create or restart your membership.</p>
+        <div class="input-email">
+            <input type="email" placeholder="Email address" class="mail">
+            <button class="getstarted">Get Started ></button>
+        </div>
+    </div>
+    <div class="lining"></div>
+    <div class="second-half">
+        <div class="video-text">
+            <div class="second-half-text">
+                <h1
+                    style="font-family:Georgia, 'Times New Roman', Times, serif; font-size: 50px; font-weight: 900; color:white;">
+                    Enjoy on your TV</h1><br>
+                <span
+                    style="font-family:Georgia, 'Times New Roman', Times, serif; font-size: 25px; font-weight: 900; color:white;">Watch
+                    on smart TVs, PlayStation, Xbox,</span><br>
+                <span
+                    style="font-family:Georgia, 'Times New Roman', Times, serif; font-size: 25px; font-weight: 900; color:white;">Chromecast,
+                    Apple TV, Blu-ray players and more.</span>
+            </div>
+            <div class="tv-image">
+                <img src="/images/tv.png" style="position: relative; bottom: 27%; left: 10%; width: 670px; z-index: 2;">
+            </div>
+            <div class="mp4-video-1">
+                <video autoplay loop>
+                    <source src="/images/video-tv-0819.m4v" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+    <div class="lining"></div>
+    <div class="Third-half">
+        <div class="mobile-text">
+            <div class="mobile">
+                <img src="/images/netflix1.jpg" style="width: 525px;">
+                <div class="third-half-download"><img src="/images/third-half-image.png"
+                        style="width: 70px; height: 90px; border-radius: 10px; top: 5px; position: relative; left: 5px;">
+                    <div
+                        style="font-family: 'Times New Roman', Times, serif; font-size: 16px; font-weight: 900; color:white; position: relative; left: 25px; top: 30%; font-weight: 600;">
+                        Stranger Things<br>
+                        <div
+                            style="font-family: 'Times New Roman', Times, serif; font-size: 14px; font-weight: 900; color:rgb(0, 108, 249);">
+                            Downloading...</div>
+                    </div>
+                    <img src="/images/download.gif"
+                        style="width: 70px;height: 70px; position: relative; left: 40px; top: 10px;">
+                </div>
+            </div>
+            <div class="third-half-text">
+                <h1
+                    style="position: relative; font-family:Georgia, 'Times New Roman', Times, serif; font-size: 50px; font-weight: 900; color:white;">
+                    Download your shows to watch offline</h1>
+                <span
+                    style="font-family: 'Times New Roman', Times, serif; font-size: 25px; font-weight: 900; color:white;">Save
+                    your favourites easily and always have</span><br>
+                <span
+                    style="font-family: 'Times New Roman', Times, serif; font-size: 25px; font-weight: 900; color:white;">something
+                    to watch.</span>
+            </div>
+        </div>
+    </div>
+    <div class="lining"></div>
+    <div class="fourth-half">
+        <div class="fourth-images-text">
+            <div style="position: relative; top: 100px;">
+                <h1
+                    style="position: relative; font-family:Georgia, 'Times New Roman', Times, serif; font-size: 50px; font-weight: 900; color:white; ">
+                    Watch everywhere</h1>
+                <span
+                    style="font-family: 'Times New Roman', Times, serif; font-size: 25px; font-weight: 900; color:white;">Stream
+                    unlimited movies and TV shows on your</span>
+                <span
+                    style="font-family: 'Times New Roman', Times, serif; font-size: 25px; font-weight: 900; color:white;">phone,
+                    tablet, laptop, and TV.</span>
+            </div>
+            <img src="/images/fourth-half-image.png" style="position: relative; left: 90px; z-index: 3;">
+            <video autoplay loop style="position: absolute; z-index: 1; left: 770px; width: 400px; top: 60px;">
+                <source src="/images/video-devices-in.m4v">
+            </video>
+        </div>
+    </div>
+    <div class="lining"></div>
+    <div class="fifth-half">
+        <div class="fifth-images-text">
+            <img src="/images/children.png" style="width: 600px;">
+            <div class="fifth-text" style=" position: relative; top: 100px;">
+                <h1
+                    style="position: relative; font-family:Georgia, 'Times New Roman', Times, serif; font-size: 50px; font-weight: 900; color:white;">
+                    Create profiles for kids</h1>
+                <span
+                    style="font-family: 'Times New Roman', Times, serif; font-size: 25px; font-weight: 900; color:white;">Send
+                    children on adventures with their favourite characters in a space made just for them—free with your
+                    membership.</span>
+            </div>
+        </div>
+    </div>
+    <div class="lining"></div>
+    <div class="sixth-half">
+        <div class="sixth-heading">Frequently Asked Questions</div>
+        <div class="sixth-questions">
+            <div class="sixth-que-1" onclick="selectedone()">
+                <p style="position: absolute; top: 22%; left: 2%;"  >What is Netflix?</p>
+                <img src="/images/add-removebg-preview.png"
+                    style="position: relative; left: 93%;top: 22%; width: 70px; height: 50px;">
+            </div>
+            <div id="sixth-description-que">Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.<br><br>
+
+                You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!</div>
+            <div class="sixth-que-1" onclick="selectedtwo()">
+                <p style="position: absolute; top: 22%; left: 2%;">How much does Netflix cost?</p>
+                <img src="/images/add-removebg-preview.png"
+                    style="position: relative; left: 93%;top: 22%; width: 70px; height: 50px;">
+            </div>
+            <div id="sixth-description-que2" >Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from ₹ 149 to ₹ 649 a month. No extra costs, no contracts.</div>
+            <div class="sixth-que-1" onclick="selectedthree()">
+                <p style="position: absolute; top: 22%; left: 2%;">Where can I watch?</p>
+                <img src="/images/add-removebg-preview.png"
+                    style="position: relative; left: 93%;top: 22%; width: 70px; height: 50px;">
+            </div>
+            <div id="sixth-description-que3" >Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.<br><br>
+
+You can also download your favourite shows with the iOS, Android, or Windows 10 app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.</div>
+            <div class="sixth-que-1" onclick="selectedfour()">
+                <p style="position: absolute; top: 22%; left: 2%;">How do I cancel?</p>
+                <img src="/images/add-removebg-preview.png"
+                    style="position: relative; left: 93%;top: 22%; width: 70px; height: 50px;">
+            </div>
+            <div id="sixth-description-que4" >Netflix is flexible. There are no annoying contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.</div>
+            <div class="sixth-que-1" onclick="selectedfive()">
+                <p style="position: absolute; top: 22%; left: 2%;">What can I watch on Netflix?</p>
+                <img src="/images/add-removebg-preview.png"
+                    style="position: relative; left: 93%;top: 22%; width: 70px; height: 50px;">
+            </div>
+            <div id="sixth-description-que5" >Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.</div>
+            <div class="sixth-que-1" onclick="selectedsix()">
+                <p style="position: absolute; top: 22%; left: 2%;">Is Netflix good for kids?</p>
+                <img src="/images/add-removebg-preview.png"
+                    style="position: relative; left: 93%;top: 22%; width: 70px; height: 50px;">
+            </div>
+            <div id="sixth-description-que6" >The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and films in their own space.<br><br>
+
+                Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.</div>
+        </div>
+        <div class="sixth-half-subtitle"
+            style="color: white; position: relative;  left: 25%; width: 1000px; font-size: 27px; margin-top: 50px;">
+            Ready to watch? Enter your email to create or restart your membership.</div>
+        <div class="sixth-half-email">
+            <input type="email" placeholder="Email Address" style="margin-bottom: 50px; margin-top: 50px; position: relative; left: 30%;" class="mail">
+            <button class="getstarted" style="position: relative; left: 32%; margin-top: 50px;">Get Started
+                ></button>
+        </div>
+    </div>
+    <div class="lining"></div>
+    <div class="ending-seventh">
+        <div class="seventh-call">Questions? Call <u style="cursor: pointer;">000-800-919-1694</u>
+            <div class="seventh-flex">
+                <u >FAQ</u>
+                <u class="last-section">Help Centre</u>
+                <u class="last-section">Account</u>
+                <u class="last-section">Media Centre</u>
+                <u class="last-section">Investor Relations</u>
+                <u class="last-section">Jobs</u>
+                <u class="last-section">Ways to Watch</u>
+                <u class="last-section">Terms of Use</u>
+                <u class="last-section">Privacy</u>
+                <u class="last-section">Cookie Regerence</u>
+                <u class="last-section">Corporate Information</u>
+                <u class="last-section">Contact Us</u>
+                <u class="last-section">Speed Test</u>
+                <u class="last-section">Legal Notices</u>
+                <u class="last-section">Only on Netflix</u>
+            </div>
+            <div class="drop" style="height: 0px; font-size:20px ; position: relative;left: 0px; margin-top: 30px;">
+                <button class="lan-button">
+                    <img src="/images/images-removebg-preview.png"
+                        style="width: 20px;height: 20px; display: inline-block; margin-bottom: 4px; margin-left: 4px;">
+                    <select name="languages" class="language">
+                        <option value="0" selected>English</option>
+                        <option value="1">हिन्दी</option>
+                    </select>
+                </button>
+            </div>
+            <span style="position: relative; top: 50px;">Netflix India</span>
+        </div>
+    </div>
+    <div class="lining"></div>
 </body>
+
 </html>
